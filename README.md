@@ -47,10 +47,12 @@ vagrant package mc01 --output mc01.box
 vagrant package db01 --output db01.box
 vagrant package app01 --output app01.box
 
-<img width="850" height="185" alt="image" src="https://github.com/user-attachments/assets/3136415f-a637-45b4-81df-11da62c4c913" />
+<img width="842" height="255" alt="image" src="https://github.com/user-attachments/assets/5467beab-3075-4aa4-9e74-85b6f58ef132" />
+
 
 and ..... so on then connect to vagrant registry and create new registry and upload mc01.box , db01.box,....etc
 
-<img width="1477" height="656" alt="image" src="https://github.com/user-attachments/assets/bd5977a4-8076-493f-aafc-b2b23d2d5950" />
+<img width="1862" height="910" alt="image" src="https://github.com/user-attachments/assets/49dda231-0879-489b-ad6c-29899bbe0979" />
+
 
 
