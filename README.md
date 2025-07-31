@@ -18,17 +18,25 @@ $ vagrant plugin install vagrant-hostmanager
 We need 5 VMs to provision the belwo services : 
 
 1. Nginx => Web Service
+
 2. Tomcat => Application Server
+
 3. RabbitMQ => Broker/Queuing Agent
-4. Memcache => DB Caching
-5. MySQL => SQL Database
+ 
+5. Memcache => DB Caching
+
+6. MySQL => SQL Database
 
 Setup should be done in below mentioned order
 
 MySQL (Database SVC)
+
 Memcache (DB Caching SVC)
+
 RabbitMQ (Broker/Queue SVC)
+
 Tomcat (Application SVC)
+
 Nginx (Web SVC)
 
 Result : 
