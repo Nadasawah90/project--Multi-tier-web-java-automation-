@@ -51,8 +51,11 @@ password        : admin_vp
 
 
 Exporting all VMs to vagrant cloud using : 
+
 vagrant package mc01 --output mc01.box
+
 vagrant package db01 --output db01.box
+
 vagrant package app01 --output app01.box
 
 <img width="842" height="255" alt="image" src="https://github.com/user-attachments/assets/5467beab-3075-4aa4-9e74-85b6f58ef132" />
