@@ -1,4 +1,4 @@
-Vagrant-web-java-automation-provision-Microservices
+                                                Vagrant-web-java-automation-provision-Microservices
 
 Architecture Design for the project : 
  
@@ -10,7 +10,9 @@ Prerequiests :
 1. Oracle VM Virtualbox
 2. Vagrant
 3. Vagrant plugins
+
 Execute below command in your computer to install hostmanager plugin
+
 $ vagrant plugin install vagrant-hostmanager
 
 We need 5 VMs to provision the belwo services : 
@@ -19,9 +21,10 @@ We need 5 VMs to provision the belwo services :
 2. Tomcat => Application Server
 3. RabbitMQ => Broker/Queuing Agent
 4. Memcache => DB Caching
-5. ElasticSearch => Indexing/Search service
-6. MySQL => SQL Database
+5. MySQL => SQL Database
+
 Setup should be done in below mentioned order
+
 MySQL (Database SVC)
 Memcache (DB Caching SVC)
 RabbitMQ (Broker/Queue SVC)
@@ -37,7 +40,6 @@ using username : admin_vp
 password        : admin_vp 
 
 <img width="1877" height="931" alt="image" src="https://github.com/user-attachments/assets/8c7b4638-2ecb-419c-9288-a5ea657e6dcc" />
-
 
 
 Exporting all VMs to vagrant cloud using : 
