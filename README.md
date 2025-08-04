@@ -72,4 +72,5 @@ and ..... so on then connect to vagrant registry and create new registry and upl
 ## using nagios for monitoring the applications ##
 <img width="1823" height="981" alt="image" src="https://github.com/user-attachments/assets/d358ac8d-6ca6-431f-a9f7-80859d91c31c" />
 
+<img width="1863" height="971" alt="image" src="https://github.com/user-attachments/assets/d2ce4158-a9a3-49b6-88ce-03848c9cb7ae" />
 
