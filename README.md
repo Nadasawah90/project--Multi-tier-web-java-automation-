@@ -73,7 +73,11 @@ and ..... so on then connect to vagrant registry and create new registry and upl
 
 Create New VM using also vagrant file to provision nagios application with all configuration which required through bootstrap-nagios.sh 
 
+# Monitoring for Hosts 
+
 <img width="1823" height="981" alt="image" src="https://github.com/user-attachments/assets/d358ac8d-6ca6-431f-a9f7-80859d91c31c" />
+
+# Monitoring for Hosts services 
 
 <img width="1863" height="971" alt="image" src="https://github.com/user-attachments/assets/d2ce4158-a9a3-49b6-88ce-03848c9cb7ae" />
 
