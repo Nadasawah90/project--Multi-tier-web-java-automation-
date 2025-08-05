@@ -1,47 +1,44 @@
-         On-Premise Vagrant Automation for Java Web & Microservices Provisioning
+                                                              ##  On-Premise Vagrant Automation for Java Web & Microservices Provisioning ##
 
-==>  Architecture Design for the project ===>  
+## Architecture Design for the project ##  
  
 <img width="2048" height="1302" alt="image" src="https://github.com/user-attachments/assets/1b1fffa9-e320-4c07-bbaf-7162d1a43c71" />
 
 
-==> Prerequiests ==> 
+# Prerequiests # 
 
 1. Oracle VM Virtualbox
 2. Vagrant
 3. Vagrant plugins
+## We need 5 VMs to provision the belwo services ## : 
 
-==> Execute below command in your computer to install hostmanager plugin==> 
+1. Nginx => Web Service ((Web SVC))
+
+2. Tomcat => Application Server ((Application SVC))
+
+3. RabbitMQ => Broker/Queuing Agent ((Broker/Queue SVC))
+ 
+5. Memcache => DB Caching ((DB Caching SVC))
+
+6. MySQL => SQL Database ((Database SVC))
+
+### Steps ### :
+
+1- Execute below command in your computer to install hostmanager plugin 
 
 $ vagrant plugin install vagrant-hostmanager
 
-==> We need 5 VMs to provision the belwo services ==>  : 
+2- Execute the belwo command to provisioning the VMs 
 
-1. Nginx => Web Service
+$ vagrant up 
+$ vagrant  provision 
 
-2. Tomcat => Application Server
+## Output ## 
 
-3. RabbitMQ => Broker/Queuing Agent
- 
-5. Memcache => DB Caching
-
-6. MySQL => SQL Database
-
-Setup should be done in below mentioned order
-
-MySQL (Database SVC)
-
-Memcache (DB Caching SVC)
-
-RabbitMQ (Broker/Queue SVC)
-
-Tomcat (Application SVC)
-
-Nginx (Web SVC)
-
-==> Output ==>  
+# Application login  #  : 
 
 <img width="1851" height="901" alt="image" src="https://github.com/user-attachments/assets/2c22f143-1a35-484f-b680-ea6ccfd18b69" />
+# Application access  #  :
 
 using username : admin_vp
 
@@ -50,8 +47,8 @@ password        : admin_vp
 <img width="1877" height="931" alt="image" src="https://github.com/user-attachments/assets/8c7b4638-2ecb-419c-9288-a5ea657e6dcc" />
 
 
-==> Exporting all VMs to vagrant cloud ==>  
-
+## Exporting all VMs to vagrant cloud ## 
+Now we can upload all VMs to virtual vagrant cloud using the belwo commands : 
 
 vagrant package mc01 --output mc01.box
 
@@ -69,7 +66,9 @@ and ..... so on then connect to vagrant registry and create new registry and upl
 
 <img width="1827" height="878" alt="image" src="https://github.com/user-attachments/assets/f8b9fff1-5ce7-4cea-9d94-ffeb06cb8108" />
 
-## using nagios for monitoring the applications ##
+## Nagios for monitoring ##
+Create New VM using also vagrant file to provision nagios application with all configuration which required through bootstrap-nagios.sh 
+
 <img width="1823" height="981" alt="image" src="https://github.com/user-attachments/assets/d358ac8d-6ca6-431f-a9f7-80859d91c31c" />
 
 <img width="1863" height="971" alt="image" src="https://github.com/user-attachments/assets/d2ce4158-a9a3-49b6-88ce-03848c9cb7ae" />
