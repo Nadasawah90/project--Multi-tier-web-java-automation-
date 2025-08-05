@@ -1,4 +1,3 @@
-        ## On-Premise Vagrant Automation for Java Web & Microservices Provisioning ## 
 
 ## Architecture Design for the project ##  
  
