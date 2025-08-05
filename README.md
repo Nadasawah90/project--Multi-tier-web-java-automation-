@@ -30,6 +30,7 @@ $ vagrant plugin install vagrant-hostmanager
 2- Execute the belwo command to provisioning the VMs 
 
 $ vagrant up 
+
 $ vagrant  provision 
 
 ## Output 
@@ -47,6 +48,7 @@ password        : admin_vp
 
 
 ## Exporting all VMs to vagrant cloud 
+
 Now we can upload all VMs to virtual vagrant cloud using the belwo commands : 
 
 vagrant package mc01 --output mc01.box
@@ -60,12 +62,14 @@ vagrant package app01 --output app01.box
 
 and ..... so on then connect to vagrant registry and create new registry and upload mc01.box , db01.box,....etc
 
+
 <img width="1862" height="910" alt="image" src="https://github.com/user-attachments/assets/49dda231-0879-489b-ad6c-29899bbe0979" />
 
 
 <img width="1827" height="878" alt="image" src="https://github.com/user-attachments/assets/f8b9fff1-5ce7-4cea-9d94-ffeb06cb8108" />
 
 ## Nagios for monitoring 
+
 Create New VM using also vagrant file to provision nagios application with all configuration which required through bootstrap-nagios.sh 
 
 <img width="1823" height="981" alt="image" src="https://github.com/user-attachments/assets/d358ac8d-6ca6-431f-a9f7-80859d91c31c" />
