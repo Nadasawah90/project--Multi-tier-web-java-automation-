@@ -38,6 +38,7 @@ $ vagrant  provision
 # Application login   : 
 
 <img width="1851" height="901" alt="image" src="https://github.com/user-attachments/assets/2c22f143-1a35-484f-b680-ea6ccfd18b69" />
+
 # Application access   :
 
 using username : admin_vp
