@@ -10,7 +10,7 @@
 1. Oracle VM Virtualbox
 2. Vagrant
 3. Vagrant plugins
-## We need 5 VMs to provision the belwo services ## : 
+## We need 5 VMs to provision the belwo services  : 
 
 1. Nginx => Web Service ((Web SVC))
 
@@ -22,7 +22,7 @@
 
 6. MySQL => SQL Database ((Database SVC))
 
-### Steps ### :
+### Steps  :
 
 1- Execute below command in your computer to install hostmanager plugin 
 
@@ -33,12 +33,12 @@ $ vagrant plugin install vagrant-hostmanager
 $ vagrant up 
 $ vagrant  provision 
 
-## Output ## 
+## Output 
 
-# Application login  #  : 
+# Application login   : 
 
 <img width="1851" height="901" alt="image" src="https://github.com/user-attachments/assets/2c22f143-1a35-484f-b680-ea6ccfd18b69" />
-# Application access  #  :
+# Application access   :
 
 using username : admin_vp
 
@@ -47,7 +47,7 @@ password        : admin_vp
 <img width="1877" height="931" alt="image" src="https://github.com/user-attachments/assets/8c7b4638-2ecb-419c-9288-a5ea657e6dcc" />
 
 
-## Exporting all VMs to vagrant cloud ## 
+## Exporting all VMs to vagrant cloud 
 Now we can upload all VMs to virtual vagrant cloud using the belwo commands : 
 
 vagrant package mc01 --output mc01.box
@@ -66,7 +66,7 @@ and ..... so on then connect to vagrant registry and create new registry and upl
 
 <img width="1827" height="878" alt="image" src="https://github.com/user-attachments/assets/f8b9fff1-5ce7-4cea-9d94-ffeb06cb8108" />
 
-## Nagios for monitoring ##
+## Nagios for monitoring 
 Create New VM using also vagrant file to provision nagios application with all configuration which required through bootstrap-nagios.sh 
 
 <img width="1823" height="981" alt="image" src="https://github.com/user-attachments/assets/d358ac8d-6ca6-431f-a9f7-80859d91c31c" />
