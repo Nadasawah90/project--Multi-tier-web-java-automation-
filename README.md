@@ -46,6 +46,10 @@ password        : admin_vp
 
 <img width="1877" height="931" alt="image" src="https://github.com/user-attachments/assets/8c7b4638-2ecb-419c-9288-a5ea657e6dcc" />
 
+# Testing Cashing server 
+
+<img width="1872" height="655" alt="image" src="https://github.com/user-attachments/assets/0a3d4328-1439-4c05-b8a1-eb18f43e7921" />
+
 
 ## Exporting all VMs to vagrant cloud 
 
