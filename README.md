@@ -34,9 +34,10 @@ $ vagrant  provision
 
 ## Output 
 
-# Application login   : 
+# Application login from Nginx server    : 
 
-<img width="1851" height="901" alt="image" src="https://github.com/user-attachments/assets/2c22f143-1a35-484f-b680-ea6ccfd18b69" />
+<img width="1918" height="978" alt="image" src="https://github.com/user-attachments/assets/06e5be9a-721e-47dd-a0b5-98d86b4e9c65" />
+
 
 # Application access   :
 
