@@ -87,7 +87,8 @@ Create New VM using also vagrant file to provision nagios application with all c
 
 ## Monitoring for Hosts services 
 
-<img width="1863" height="971" alt="image" src="https://github.com/user-attachments/assets/d2ce4158-a9a3-49b6-88ce-03848c9cb7ae" />
+<img width="1913" height="987" alt="image" src="https://github.com/user-attachments/assets/6b4b5a17-8e85-405e-888b-afee5918180d" />
+
 
 ##  Hint : 
 ### All VMs, along with their updates, provisioning configurations, and integrations, were completed no more than 2 hours ago .
