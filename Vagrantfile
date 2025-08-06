@@ -58,7 +58,7 @@ Vagrant.configure("2") do |config|
      vb.memory = "1024"
    end
 end
-### Nginx VM ###
+
 ### nagios vm  ####
   config.vm.define "nagios" do |nagios|
     nagios.vm.box = "eurolinux-vagrant/centos-stream-9"
