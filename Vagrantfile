@@ -33,7 +33,7 @@ Vagrant.configure("2") do |config|
     rmq01.vm.network "private_network", ip: "192.168.56.13"
     rmq01.vm.provider "virtualbox" do |vb|
      vb.memory = "1024"
-	rmq01.vm.provision "shell", path: "bootstrap-MQ.sh", privileged: false
+    rmq01.vm.provision "shell", path: "bootstrap-MQ.sh", privileged: false
    end
   end
   ### tomcat vm ###
@@ -44,7 +44,7 @@ Vagrant.configure("2") do |config|
     app01.vm.network "private_network", ip: "192.168.56.12"
     app01.vm.provider "virtualbox" do |vb|
      vb.memory = "2048"
-	app01.vm.provision "shell", path: "bootstrap-tomcat.sh", privileged: false
+    app01.vm.provision "shell", path: "bootstrap-tomcat.sh", privileged: false
    end
    end
    ### Nginx VM ###
