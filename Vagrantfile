@@ -10,11 +10,11 @@ Vagrant.configure("2") do |config|
     db01.vm.network "private_network", ip: "192.168.56.15"
     db01.vm.provider "virtualbox" do |vb|
      vb.memory = "1024"
-   end
-
-  end
-  
-### Memcache vm  #### 
+	 
+    db01.vm.provision "shell", path: "bootstrap-db.sh", privileged: false
+	end
+ end
+ ### Memcache vm  #### 
   config.vm.define "mc01" do |mc01|
     mc01.vm.box = "eurolinux-vagrant/centos-stream-9"
     mc01.vm.box_version = "9.0.43"
@@ -22,10 +22,10 @@ Vagrant.configure("2") do |config|
     mc01.vm.network "private_network", ip: "192.168.56.14"
     mc01.vm.provider "virtualbox" do |vb|
      vb.memory = "1024"
-   end
+    mc01.vm.provision "shell", path: "bootstrap-memcash.sh", privileged: false
+	end
   end
-  
-### RabbitMQ vm  ####
+ ### RabbitMQ vm  ####
   config.vm.define "rmq01" do |rmq01|
     rmq01.vm.box = "eurolinux-vagrant/centos-stream-9"
     rmq01.vm.box_version = "9.0.43"
@@ -33,10 +33,10 @@ Vagrant.configure("2") do |config|
     rmq01.vm.network "private_network", ip: "192.168.56.13"
     rmq01.vm.provider "virtualbox" do |vb|
      vb.memory = "1024"
+	rmq01.vm.provision "shell", path: "bootstrap-MQ.sh", privileged: false
    end
   end
-  
-### tomcat vm ###
+  ### tomcat vm ###
    config.vm.define "app01" do |app01|
     app01.vm.box = "eurolinux-vagrant/centos-stream-9"
     app01.vm.box_version = "9.0.43"
@@ -44,11 +44,10 @@ Vagrant.configure("2") do |config|
     app01.vm.network "private_network", ip: "192.168.56.12"
     app01.vm.provider "virtualbox" do |vb|
      vb.memory = "2048"
+	app01.vm.provision "shell", path: "bootstrap-tomcat.sh", privileged: false
    end
    end
-   
-  
-### Nginx VM ###
+   ### Nginx VM ###
   config.vm.define "web01" do |web01|
     web01.vm.box = "ubuntu/jammy64"
     web01.vm.hostname = "web01"
@@ -56,21 +55,10 @@ Vagrant.configure("2") do |config|
   web01.vm.provider "virtualbox" do |vb|
      vb.gui = true
      vb.memory = "1024"
-   end
-end
-
-### nagios vm  ####
-  config.vm.define "nagios" do |nagios|
-    nagios.vm.box = "eurolinux-vagrant/centos-stream-9"
-    nagios.vm.box_version = "9.0.43"
-    nagios.vm.hostname = "nagios"
-    nagios.vm.network "private_network", ip: "192.168.56.20"
-    nagios.vm.provider "virtualbox" do |vb|
-     vb.memory = "2048"
-	 
-    nagios.vm.provision "shell", path: "bootstrap-nagios.sh", privileged: false
-	end
- 
- end
   
+  web01.vm.provision "shell", path: "bootstrap-ngnix.sh", privileged: false
+
 end
+  end
+ end
+
