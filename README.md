@@ -79,6 +79,11 @@ Create New VM using also vagrant file to provision nagios application with all c
 
 <img width="1917" height="946" alt="image" src="https://github.com/user-attachments/assets/bd94e637-2297-4154-8667-9ce914320ed0" />
 
+# Finally, verify Nagios Configuration files for any errors
+
+#/usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
+
+<img width="482" height="591" alt="image" src="https://github.com/user-attachments/assets/b3f82c8f-727c-4873-b793-ee06ff4c27ec" />
 
 ## Monitoring for Hosts 
 
