@@ -1,4 +1,4 @@
- ## Architecture Design for the project ##  
+ ## Architecture Design for the project on Prime ##  
  
 <img width="2048" height="1302" alt="image" src="https://github.com/user-attachments/assets/1b1fffa9-e320-4c07-bbaf-7162d1a43c71" />
 
